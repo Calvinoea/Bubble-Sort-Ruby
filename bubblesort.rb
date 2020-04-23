@@ -6,7 +6,7 @@ def bubble_sort(array)
     (0...array.size - 1).each do |item|
       array[item], array[item + 1] = array[item + 1], array[item] if array[item] > array[item + 1]
     end
-    
+
     laps += 1
   end
   array
