@@ -1,4 +1,4 @@
-def bubble_sort(array)
+def bubble_sort_by(array)
   laps = 0
 
   while laps < array.size - 1
@@ -12,4 +12,4 @@ def bubble_sort(array)
   array
 end
 
-bubble_sort([4, 3, 78, 2, 0, 2])
+bubble_sort_by([4, 3, 78, 2, 0, 2])
