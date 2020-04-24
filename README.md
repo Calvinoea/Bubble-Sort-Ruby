@@ -30,11 +30,11 @@ You are welcome to make contributions to the repository. Contributions may be ma
 ## 👤 Author
 
 # Hillary Okerio
-- GitHub [here](https://github.com/hillarioh/)
+- GitHub [@hillarioh](https://github.com/hillarioh/)
 - Twitter: [@hillaokri](https://twitter.com/hillaokri)
 
 # Calvin
-- GitHub [here](https://github.com/calvinoea/)
+- GitHub [@calvinoea](https://github.com/calvinoea/)
 - Twitter: [@yasukeoz](https://twitter.com/yasukeoz)
 - LinkedIn: [Calvin](https://www.linkedin.com/in/calvin-ebun-amu-9b200017a/)
 
