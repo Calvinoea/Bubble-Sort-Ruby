@@ -13,8 +13,14 @@ def bubble_sort(array)
 end
 
 def bubble_sort_by(array)
-  array.sort! { |first_num, second_num| first_num <=> second_num }
+  (0...array.count - 1).each do |_k|
+    (0...array.count - 1).each do |k|
+      array[k], array[k + 1] = array[k + 1], array[k] if yield(array[k], array[k + 1]) == 1
+    end
+  end
+
+  array
 end
 
-bubble_sort_by([4, 3, 78, 2, 0, 2])
-bubble_sort([4, 3, 78, 2, 0, 2])
+print bubble_sort([4, 3, 78, 2, 0, 2])
+print bubble_sort_by([4, 3, 78, 2, 0, 2]) { |first, second| first <=> second }
