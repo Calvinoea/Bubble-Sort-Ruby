@@ -15,7 +15,7 @@ end
 def bubble_sort_by(array)
   (0...array.count - 1).each do |_k|
     (0...array.count - 1).each do |k|
-      array[k], array[k + 1] = array[k + 1], array[k] if yield(array[k], array[k + 1]) == 1
+      array[k], array[k + 1] = array[k + 1], array[k] if yield(array[k], array[k + 1]).positive?
     end
   end
 
@@ -23,4 +23,8 @@ def bubble_sort_by(array)
 end
 
 print bubble_sort([4, 3, 78, 2, 0, 2])
-print bubble_sort_by([4, 3, 78, 2, 0, 2]) { |first, second| first <=> second }
+
+a = bubble_sort_by(%w[hi hello hey]) do |left, right|
+  left.length - right.length
+end
+puts a
